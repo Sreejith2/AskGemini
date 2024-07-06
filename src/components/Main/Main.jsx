@@ -5,13 +5,13 @@ import { Context } from '../../context/context'
 function Main() {
     const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} = useContext(Context)
   return (
-    <div className='flex flex-col flex-1 mt-4 min-h-screen relative'>
+    <div className='flex flex-col flex-1 mt-2 min-h-screen justify-between'>
         <div className='flex h-[50px] md:h-[50px] items-center text-green-900 text-[20px] px-3 justify-between min-w-full'>
             <p>Gemini</p>
             <img className=' w-12 rounded-[50%] ' src={assets.user_icon} alt='' />
         </div>
         <div className=' max-w-4xl my-[16px] md:my-auto mx-auto '>
-            <div className='min-h-[60vh]'>
+            <div className=''>
                 {!showResult?<><div className='text-[25px] md:text-[35px] text-slate-700 font-[500] p-2'>
                     <p><span className=' bg-clip-text text-red-600 md:text-transparent md:bg-gradient-to-br from-red-500 to to-blue-500 ' >Hello , Dev</span></p>
                     <p>How can i help you today ?</p>
@@ -49,7 +49,7 @@ function Main() {
             </div>
         </div>
             
-        <div className='px-2 mx-auto md:mb-4'>
+        <div className=' flex flex-col gap-1 px-2 mx-auto md:mb-4'>
             <div className='flex items-center justify-between px-2 md:py-1 bg-slate-300 rounded-[50px] '>
                 <input onChange={(e) => setInput(e.target.value)} value={input} className='flex flex-1 bg-transparent outline-none border-none p-[2px] p-1 text-[14px] md:text-[16px] ' placeholder='Enter prompt here' />
                 <div className='flex items-center gap-3 '>
