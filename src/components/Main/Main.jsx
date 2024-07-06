@@ -38,7 +38,7 @@ function Main() {
                         <img className=' w-10 rounded-full ' src={assets.user_icon} alt='' />
                         <p className='text-[17px] font-[500] capitalize'>{recentPrompt}</p>
                     </div>
-                    <div className='flex items-start gap-5'>
+                    <div className='flex flex-col md:flex-row p-2 items-start gap-5'>
                         <img className=' w-10 ' src={assets.gemini_icon} alt='' />
                         {loading?<div className='flex flex-col gap-2 [&>hr]:rounded-[4px] [&>hr]:border-none [&>hr]:bg-gradient-to-r from-purple-300 to-blue-400 [&>hr]:h-3 [&>hr]:animate-pulse  '><hr/><hr/><hr/></div>:
                             <p className=' leading-6 md:leading-8 text-[14px] md:text-[16px] ' dangerouslySetInnerHTML={{__html:resultData}}></p>
@@ -49,7 +49,7 @@ function Main() {
             </div>
         </div>
             
-        <div className=' flex flex-col gap-1 px-2 mx-auto md:mb-4'>
+        <div className='flex flex-col gap-1 px-2 mx-auto md:mb-4'>
             <div className='flex items-center justify-between px-2 md:py-1 bg-slate-300 rounded-[50px] '>
                 <input onChange={(e) => setInput(e.target.value)} value={input} className='flex flex-1 bg-transparent outline-none border-none p-[2px] p-1 text-[14px] md:text-[16px] ' placeholder='Enter prompt here' />
                 <div className='flex items-center gap-3 '>
