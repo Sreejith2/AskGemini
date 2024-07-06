@@ -33,7 +33,7 @@ function Main() {
                         <p>Improve readability of the following code.</p>
                         <img src={assets.code_icon} alt='' />
                     </div>
-                </div></>:<div className='pr-5 mt-5 md:mt-0 md:pr-0 md:p-4 mx-auto w-[350px] md:w-[850px] max-h-[400px] overflow-y-scroll bg-slate-200 custom-scrollbar '>
+                </div></>:<div className='pr-5 mt-5 md:mt-0 md:pr-0 md:p-4 mx-auto w-[350px] md:w-[850px] overflow-y-scroll bg-slate-200 custom-scrollbar '>
                     <div className='my-[20px] mx-0 flex items-center gap-5'>
                         <img className=' w-10 rounded-full ' src={assets.user_icon} alt='' />
                         <p className='text-[17px] font-[500] capitalize'>{recentPrompt}</p>
