@@ -13,10 +13,10 @@ function Main() {
         <div className=' max-w-4xl m-auto '>
             <div className='min-h-[60vh]'>
                 {!showResult?<><div className='text-[25px] md:text-[35px] text-slate-700 font-[500] p-2'>
-                    <p><span className=' bg-clip-text text-transparent bg-gradient-to-br from-red-500 to to-blue-500 ' >Hello , Dev</span></p>
+                    <p><span className=' bg-clip-text text-red-600 md:text-transparent md:bg-gradient-to-br from-red-500 to to-blue-500 ' >Hello , Dev</span></p>
                     <p>How can i help you today ?</p>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-4 mb-4 md:mb-0 mx-6 md:mx-0 [&>div]:h-20  md:[&>div]:h-32 [&>div]:bg-slate-300 gap-2 md:[&>div>p]:text-[16px] [&>div>p]:text-[14px] [&>div>img]:bg-slate-100 [&>div>img]:rounded-[50%] [&>div]:relative [&>div]:p-4 [&>div]:rounded-lg [&>div>img]:w-6 [&>div>img]:absolute [&>div>img]:bottom-2 [&>div>img]:right-2'>
+                <div className='grid grid-cols-1 md:grid-cols-4 mb-3 md:mb-0 mx-6 md:mx-0 [&>div]:h-20  md:[&>div]:h-32 [&>div]:bg-slate-300 gap-2 md:[&>div>p]:text-[16px] [&>div>p]:text-[14px] [&>div>img]:bg-slate-100 [&>div>img]:rounded-[50%] [&>div]:relative [&>div]:p-4 [&>div]:rounded-lg [&>div>img]:w-6 [&>div>img]:absolute [&>div>img]:bottom-2 [&>div>img]:right-2'>
                     <div className=' hover:bg-slate-400 cursor-pointer '>
                         <p>Suggest beautiful places to visit.</p>
                         <img src={assets.compass_icon} alt='' />
