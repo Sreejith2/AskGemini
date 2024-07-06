@@ -4,7 +4,7 @@ import Main from './components/Main/Main'
 
 function App() {
   return (
-    <div className='flex md:overflow-clip max-h-screen'>
+    <div className='flex'>
       <Sidebar/>
       <Main/>
     </div>
